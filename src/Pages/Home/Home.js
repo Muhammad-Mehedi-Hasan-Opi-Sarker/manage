@@ -1,11 +1,10 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import Navbar from './Navbar';
+import Progress from './Progress/Progress';
 
 const Home = () => {
     return (
         <div>
-           <Navbar></Navbar>
+            <Progress></Progress>
         </div>
     );
 };

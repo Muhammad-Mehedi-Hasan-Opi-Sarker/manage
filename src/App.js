@@ -7,11 +7,12 @@ import Product from './Pages/Product/Product';
 import Community from './Pages/Community/Community';
 import About from './Pages/About/About';
 import Careers from './Pages/Careers/Careers';
+import Navbar from './Pages/Home/Navbar';
 
 function App() {
   return (
-    <div className="App">
-
+    <div className="App container">
+      <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>

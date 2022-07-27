@@ -1,41 +1,40 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
     return (
-        <div>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+        <div style={{marginBottom:'60px'}}>
+            <nav className="navbar navbar-expand-lg container">
+                <div className="container-fluid">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <Link className="navbar-brand" to='/'><img src={logo} alt="" /></Link>
+                    <div className="collapse navbar-collapse align-content-stretch" id="navbarTogglerDemo03">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <Link to='/' className="nav-link active" aria-current="page" href="#">Home</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                            <li className="nav-item">
+                                <Link to='/pricing' className="nav-link" href="#">Pricing</Link>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <li className="nav-item">
+                                <Link to='/product' className="nav-link" href="#">Product</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
+                            <li className="nav-item">
+                                <Link to='/about' className="nav-link" href="#">About Us</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link to='/careers' className="nav-link" href="#">Careers</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to='/community' className="nav-link" href="#">Community</Link>
+                            </li>
+                            
                         </ul>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                        <button style={{backgroundColor:'#FF7F50'}} className='rounded-pill border-0 p-2'>Get Started</button>
                     </div>
                 </div>
             </nav>

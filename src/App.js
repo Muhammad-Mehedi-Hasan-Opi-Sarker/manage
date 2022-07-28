@@ -8,10 +8,12 @@ import Community from './Pages/Community/Community';
 import About from './Pages/About/About';
 import Careers from './Pages/Careers/Careers';
 import Navbar from './Pages/Home/Navbar';
+import Customers from './Pages/Home/Customers/Customers';
+import Work from './Pages/Home/Work/Work';
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -22,9 +24,7 @@ function App() {
         <Route path='about' element={<About></About>}></Route>
         <Route path='/careers' element={<Careers></Careers>}></Route>
       </Routes>
-
     </div>
   );
 }
-
 export default App;

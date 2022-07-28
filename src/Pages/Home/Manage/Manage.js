@@ -3,7 +3,7 @@ import './Manage.css';
 
 const Manage = () => {
     return (
-        <div className='row'>
+        <div className='row' style={{margin:'80px'}}>
             <section className='col-lg-6'>
                 <div className='first'>
                     <h1>What's different about Manage?</h1>

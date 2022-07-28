@@ -11,7 +11,7 @@ import Navbar from './Pages/Home/Navbar';
 
 function App() {
   return (
-    <div className="App container">
+    <div className="container">
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

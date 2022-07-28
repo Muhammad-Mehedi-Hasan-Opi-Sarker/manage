@@ -3,7 +3,7 @@ import progress from '../../../assets/progress.png';
 
 const Progress = () => {
     return (
-        <div className='row'>
+        <div className='row mb-5'>
             
             <div className='col-lg-6 order-sm-2'>
                 <img className='img-fluid' src={progress} alt="" />

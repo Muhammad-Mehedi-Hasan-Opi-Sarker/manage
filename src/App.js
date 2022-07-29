@@ -8,8 +8,8 @@ import Community from './Pages/Community/Community';
 import About from './Pages/About/About';
 import Careers from './Pages/Careers/Careers';
 import Navbar from './Pages/Home/Navbar';
-import Customers from './Pages/Home/Customers/Customers';
-import Work from './Pages/Home/Work/Work';
+import Footer from './Pages/Shared/Footer/Footer';
+import Privacy from './Pages/Privacy/Privacy';
 
 function App() {
   return (
@@ -23,7 +23,9 @@ function App() {
         <Route path='/community' element={<Community></Community>}></Route>
         <Route path='about' element={<About></About>}></Route>
         <Route path='/careers' element={<Careers></Careers>}></Route>
+        <Route path='/privacy' element={<Privacy></Privacy>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

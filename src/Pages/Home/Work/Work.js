@@ -4,7 +4,7 @@ import './Work.css';
 const Work = () => {
     return (
         <div className='color row text-center align-items-center'
-        style={{margin:'3px'}}
+        style={{margin:'1px'}}
         >
             <div className='col-lg-6'>
             <h1 className='text-white'>Simplify how your team works today.</h1>
